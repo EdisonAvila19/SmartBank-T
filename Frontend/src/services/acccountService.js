@@ -3,6 +3,7 @@ export async function getAccounts(UsuarioID) {
   console.log('GetAccounts')
   try {
     // ? Sección con backend
+    console.log(import.meta.env.VITE_PUBLIC_API)
     if (import.meta.env.VITE_PUBLIC_API){
       const resp = await fetch(`${import.meta.env.VITE_PUBLIC_API}/cuentas/enlistar`, {
         method: "GET"
