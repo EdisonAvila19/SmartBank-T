@@ -145,7 +145,7 @@ const menuOptions = {
 
   } catch (e) {
     console.log(e)
-    // logOut()
+    logOut()
   }
 
 })();
